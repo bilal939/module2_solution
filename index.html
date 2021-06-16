@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,6 +12,46 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 
 </head>
 
@@ -123,176 +163,247 @@
   </div>
 
 
-
   <div class="container">
-    <img style="float: left;" src="Finology Front-End Assessment/assets/7-icons/heart.svg">
-    <div class="style">
-      <strong>What other people say<br> about our service</strong>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-2">
+                <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-10">
+                <h5>David Champion</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p>bsdbndsiunsinucvuisncvsidnus</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9">
+                <h5>David Champion</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p>bsdbndsiunsinucvuisncvsidnus</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9">
+                <h5>David Champion</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p>bsdbndsiunsinucvuisncvsidnus</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9">
+                <h5>David Champion</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p>bsdbndsiunsinucvuisncvsidnus</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
     </div>
-    <div id="multi-item-example" class="carousel slide carousel-multi-item" >
-
-
-
-
-
-
-      <!--Controls-->
-       <div class="controls-top">
-    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
-        class="fas fa-chevron-right"></i></a>
   </div>
 
-      <!--/.Controls-->
-   
-     
 
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox"> 
 
-      <!--First slide start-->
-       <div class="carousel-item active"> 
 
-      <div class="col-lg-4 col-md-3" style="float:left">
-        <div class="card mb-2">
 
-          <div class="card-body">
-            <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
 
+  <!-- <div id="multi-item-example" class="carousel slide carousel-multi-item">
+      <div class="setting"> <img src="Finology Front-End Assessment/assets/7-icons/heart.svg">
+        <h5>What other people say<br> about our service</h5>
+        Controls-->
+  <!-- <div class="controls-top"> <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+              class="fas fa-chevron-right icon-2x"></i></a> </div>
+      </div> -->
+
+
+
+  <!--/.Controls-->
+
+
+  <!-- <div class="row"> -->
+  <!--Slides-->
+  <!-- <div class="carousel-inner" role="listbox"> -->
+
+  <!--First slide start-->
+  <!-- <div class="carousel-item active"> -->
+
+
+  <!-- <div class="col-lg-4 col-md-6 col-sm-12" style="float:left">
+            <div class="card mb-4">
+              <div class="card-body">
+                <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 ">
+                  <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
+                </div> 
+                 <div class="col-lg-10 col-md-10 col-sm-10">
+                  <h5>David Champion</h5>
+                  <h6>CEO of ICLOUD</h6>
+                 </div>
+           </div>
+                <div class="row">
+                  <div class="col">
+                    <p>"System is Excellent.it has made my system user experince<br> to become one of the Easiest!"</p>
+                  </div>
+                </div>
+               
+              </div>
           </div>
-        </div>
-      </div>
-
-
-
-      <div class="col-lg-4 col-md-3" style="float:left">
-        <div class="card mb-2">
-
-          <div class="card-body ">
-            <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
-
           </div>
-        </div>
-      </div>
+         -->
 
 
 
-      <div class="col-lg-4 col-md-3" style="float:left">
-        <div class="card mb-2">
+  <!-- <div class="col-lg-4 col-md-6 col-sm-12" style="float:left">
+            <div class="card mb-4">
 
-          <div class="card-body ">
-            <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-2 ">
+                    <img src="Finology Front-End Assessment/assets/4-people/vincent-joignie.jpg">
+                  </div> 
+                   <div class="col-lg-10 col-md-10 col-sm-10">
+                    <h5>David Frank van hord</h5>
+                    <h6>CEO of Marks.co</h6>
+                   </div>
+             </div>
+                  <div class="row">
+                    <div class="col">
+                      <p>"I just want to share a quick note and and let you know that you guys did really a good job"</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div> -->
 
+
+  <!-- 
+          <div class="col-lg-4 col-md-6 col-sm-12" style="float:left">
+            <div class="card mb-4 ">
+
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-2 ">
+                    <img src="Finology Front-End Assessment/assets/4-people/jerome-boudot.jpg">
+                  </div> 
+                   <div class="col-lg-10 col-md-10 col-sm-10">
+                    <h5>Lucas Bond</h5>
+                    <h6>BOD Of skyscanner</h6>
+                   </div>
+             </div>
+                  <div class="row">
+                    <div class="col">
+                      <p>"I just want to share a quick note and and let you know that you guys did really a good job"</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div> -->
+
+
+  <!-- </div> -->
+
+
+
+  <!--/.First slide end-->
+
+  <!--Second slide start-->
+  <!-- <div class="carousel-item">
+          <div class="col-lg-4 col-md-6 col-sm-12" style="float:left">
+            <div class="card mb-4">
+
+              <div class="card-body ">
+               <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-2 ">
+                    <img src="Finology Front-End Assessment/assets/4-people/jerome-boudot.jpg">
+                  </div> 
+                   <div class="col-lg-10 col-md-10 col-sm-10">
+                    <h5>Lucas Bond</h5>
+                    <h6>BOD Of skyscanner</h6>
+                   </div>
+             </div>
+                  <div class="row">
+                    <div class="col">
+                      <p>"I just want to share a quick note and and let you know that you guys did really a good job"</p>
+                    </div>
+                  </div>
+               
+
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-
-
-
-
-    </div>
-    <!--/.First slide end-->
-
-    <!--Second slide start-->
-    <div class="carousel-item"> 
-    <div class="col-lg-4 col-md-3" style="float:left">
-      <div class="card mb-2">
-
-        <div class="card-body ">
-          <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
         
-      </div>
-    </div> 
-    </div>
-     <div class="col-lg-4 col-md-3" style="float:left">
-      <div class="card mb-2">
 
-        <div class="card-body ">
-          <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
 
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-3" style="float:left">
-        <div class="card mb-2">
-
-          <div class="card-body ">
-            <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
-
-          </div>
-        </div>
-      </div>
-
-      
-
-</div>
-
-    
-    <!--/.Second slide end-->
-
-      <!--third /.Slides start-->
-    <div class="carousel-item">
-
-      <div class="col-lg-4 col-md-3" style="float:left">
-        <div class="card mb-2">
-
-          <div class="card-body ">
-            <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-3" style="float:left">
-        <div class="card mb-2">
-
-          <div class="card-body ">
-            <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-3" style="float:left">
-        <div class="card mb-2">
-
-          <div class="card-body ">
-            <img src="Finology Front-End Assessment/assets/4-people/david-campion.jpg">
-
-          </div>
-        </div>
-      </div>
+        <!--/.Second slide end-->
 
 
 
 
+  <!-- </div>
+</div> -->
 
-    </div>
-    <!--third /.Slides-->
 
+  <!--Indicators-->
+  <!-- <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
 
-  </div>
-  
-  
-<!--Indicators-->
-<ol class="carousel-indicators">
-  <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-  <li data-target="#multi-item-example" data-slide-to="1"></li>
-  <li data-target="#multi-item-example" data-slide-to="2"></li>
-  
-</ol> 
-   
+      </ol> -->
+
   <!--/.Slides-->
 
-  </div>
-  
- 
-      <!--/.Indicators-->
+
+
+  <!-- </div> -->
+  <!--/.Indicators-->
 
 
 
-  </div>
 
 
 
@@ -308,5 +419,3 @@
 
 
 </body>
-
-</html>
