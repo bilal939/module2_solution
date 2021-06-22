@@ -1,4 +1,4 @@
-.image{
+..image{
   width: 100%;
 }
 .navbar{
@@ -9,6 +9,7 @@
   padding: 30px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
  
 .sec2{
@@ -21,15 +22,22 @@
   
 }
 
-
 .img-responsive{
   width: 100%;
 }
-@media (max-width:766px) {
-  .design{
-   flex: none;
-   flex-direction: column;
-  }
+
+.navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 329.26933 329' width='10' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0'/%3E%3C/svg%3E");
+}
+
+@media (min-width:800px) {
+.style{
+  margin-top: 100px;
+}
 }
 
 @media (min-width:768px) {
@@ -38,19 +46,26 @@
     padding-right: 90px;
    }
   
-
-   
-
-   
+}
+h4{
+  color: #252584; 
+  padding: 5px;
+  margin-top: 50px;
+  word-spacing: 3px;
+  font-weight: 800;
 }
 
-@media (max-width:768px ) {
+@media (max-width:766px ) {
   h1{
-    
     font-size: 18px;
     font-weight: bold;
  }
+
  
+ .design{
+  flex: none;
+  flex-direction: column;
+ }
 
 .image{
   display: none;
@@ -90,28 +105,12 @@
 }
 
 
-h4{
-    color: #252584; 
-    padding: 5px;
-    margin-top: 50px;
-    word-spacing: 3px;
-    font-weight: 800;
-}
-h5{
-  font-size: medium;
-  font-weight: bold;
-  padding: 5px;
-}
+
 h6{
   font-size: medium;
   font-weight: lighter;
 
 }
-
-h2{
-    color: #252584;
-}
-
 
 
 #p1{
@@ -208,5 +207,3 @@ label {
    padding-left: 10px; 
    font-weight: bold;
 }
-
-
