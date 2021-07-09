@@ -28,7 +28,7 @@
 
  .banner-section {
    width: 100%;
-   height: 726px;
+   height: 850px;
    position: relative;
    background-color: #252584;
    padding-left: 190px;
@@ -52,12 +52,14 @@
   font-size: 70px;
  }
  .banner-section .my-para .my-content p{
+   
    font-size: 23px;
  }
  .banner-section .banner-image img{
    width: 100%;
    position: absolute;
-   top: 25%;
+   top: 55%;
+   left: 20%;
   }
 
 
@@ -66,7 +68,7 @@
 
  /*Content-section*/
 .content1{
-
+ margin-top: 100px;
   width: 100%;
   height: 100%;
   
@@ -74,27 +76,54 @@
 .content1 .contentimage1 img{
   width: 100%;
 }
+.content-para{
+  margin-top: 80px;
+  width: 550px;
+}
 .content-para h2{
-  margin-top: 90px;
   font-size: 38px;
   font-family: "Content";
   color: #252584;
   width: 400px;
 }
 .content-para p{
+  margin-top: 20px;
   color: #a6a6c2;
-  font-size: 24px;
+  font-size: 20px;
   padding: 5px;
-  line-height: 1.7;
+  line-height: 1.8;
 }
  @font-face {
    font-family: "Content";
    src: url("Nunito-ExtraBold.ttf");
  }
 
+.Content2{
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+.content-para2{
+  margin-top: 80px;
+  width: 400px;
+  height: 100%;
+}
+.content-para2 h4{
+  color: #252584;
+  font-size: 38px;
+  font-family: "Content";
 
-
-
+}
+.content-para2 p{
+  color: #a6a6c2;
+  font-size: 18px;
+  line-height: 1.6;
+  word-spacing: 3px;
+  margin-top: 20px;
+}
+.Content2 .content-image2 img{
+  width: 100%;
+}
 
 
 
@@ -106,7 +135,27 @@
 
 /*----Service start-----*/
 
-
+.Services{
+  margin-top: 150px;
+}
+.Services .svg-image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: red;
+}
+.Services .head{
+  width: 400px;
+}
+.Services .head h3{
+  font-family: "Bold";
+  font-size: 25px;
+  color: #252584;
+}
 @font-face {
   font-family: "Bold";
   src: url("Nunito-ExtraBold.ttf");
@@ -115,54 +164,35 @@
   font-family: "same";
   src: url("Nunito-Light.ttf");
 }
-.heading{
-display: flex;
-flex-direction: column;
-padding-left: 10px;
-padding-top: 10px;
-}
 
-#heading1{
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+.heading{
+  width: 100%;
+  padding-left: 30px;
+}
+.swiper-slide .card2 .heading h5{
   margin-bottom: 0px;
   font-family: "Bold";
   font-weight: bolder;
+  font-size: 15px;
 }
-#heading2{
+.swiper-slide .card2 .heading p{
   font-family: "same";
   font-weight: lighter;
   color: #9d9d9d;
+  margin-top: 5px;
+}
+.swiper-slide .card2 .paragraph p{
+  font-size: 15px;
+  padding: 5px 15px;
+  color: #616161;
 }
 
-
-
-
-
-
-
-
-.svg-image{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-}
-.design{
-  display: flex;
-}
-
-
-
-h6{
-  font-size: medium;
-  font-weight: lighter;
-
-}
-
-
-.card2 #img{
+.card2 img{
   width: 50px;
   height: 40px;
   border-radius: 50%;
@@ -171,11 +201,28 @@ h6{
   
 }
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
+/* Important Peoples */
+
+.Important{
+  margin-top: 120px;
+ 
 }
-.button1{
+.Important .svg-image2{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #ff00b8;
+}
+.Important .head2 h3{
+  color: #252584;
+  font-family: "Bold";
+  font-size: 32px;
+}
+.Important .buttons .button1{
   background-color: #fffede;
   color: #ffdd77;
   padding: 4px 30px;
@@ -183,7 +230,7 @@ h6{
   text-align: center;
   border-radius: 4px;
 }
-.button2{
+.Important .buttons .button2{
   background-color: #eedeff;
   color: #a882d4;
   padding: 4px 30px;
@@ -193,32 +240,86 @@ h6{
   margin-left: 5px;
 
 }
-#p3{
-  color: #252584;
-  font-weight: bold;
-  font-size: 40px;
-  font-family: "Content";
-  padding: 10px;
+
+
+
+/*Cards Section */
+.cards{
+  margin-top: 100px;
+  width: 100%;
+  padding: 10px 30px;
 }
+.cards .card{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  border: none;
+  border-radius: 10px;
+ margin-bottom: 20px;
+ 
+}
+.cards .card .card-img-top{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.cards .card  .icon-img{
+  background-color: #dcf0ff;
+  padding: 8px;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  width: 31px;
+  visibility: hidden;
+}
+.card:hover .icon-img {
+  visibility: visible;
+}
+.card .card-body h6{
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 5px;
+}
+.card .card-body p{
+  text-align: center;
+  color: #9d9d9d;
+  padding-top: 5px;
+}
+
+/*Cards Section*/
+
+
+
+/* Icons */
+.partners{
+  margin-top: 120px;
+  width: 100%;
+  height: 100%;
+
+}
+.partners .about p {
+  font-family: "Bold";
+  color: #252584;
+  font-size: 30px;
+
+}
+.design{
+  display: flex;
+}
+
+
+
+
+
+
+
+
 @font-face {
   font-family:"Nunito-black.ttf";
   src: url("Nunito-Bold.ttf");
 }
 
-#data{
-  font-size: 15px;
-  padding: 5px 15px;
-  color: #616161;
 
 
-}
-
-.h2{
-  text-align: center;
-  color: #252584;
-  font-size: 30px;
-  font-family: "Content";
-}
 
 
 label {
@@ -255,28 +356,7 @@ label {
   
 }
 
-.icon-img{
-  background-color: #dcf0ff;
-  padding: 8px;
-  border-radius: 50%;
-  position: absolute;
-  right: 15px;
-  top: 20px;
-  width: 31px;
-  visibility: hidden;
 
-}
-.card:hover .icon-img {
-  visibility: visible;
-}
-h5{
-  font-size: small;
-  font-weight: bold;
-}
-
-.card-img-top{
-  border-radius: 10px;
-}
 input[type=NAME],[type=email]{
   font-size: 16px;
   padding: 20px;
@@ -299,20 +379,17 @@ input[type=NAME],[type=email]{
     height: 650px;
 }
 
-#card2{
-    position: relative;
-    display: flex;;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-}
 
 /*Media Queries*/
-
+@media screen and (min-width:1250px) {
+  .Content2 .content-image2 img{
+    position: absolute;
+    left:15%;
+  }
+  .Services,.Important{
+    padding-right: 260px;
+  }
+}
 @media (max-width:1800px) and (min-width:1200px){
   .content-para{
     margin-top: 68px;
@@ -321,12 +398,15 @@ input[type=NAME],[type=email]{
   .content1{
     padding: 0px 50px;
   }
-  .content-para h2{
+  .content-para h2 , .content-para2 h4{
     font-size: 35px;
   }
-  .content-para p{
+  .content-para p  {
     font-size: 14px;
     width: 502px;
+  }
+  .content-para2 p{
+    font-size: 14px;
   }
 }
 @media (min-width:1200px) {
@@ -347,28 +427,52 @@ input[type=NAME],[type=email]{
       width: 100%;
       text-align: center;
     }
+    
 }
-
+@media (max-width:1200px) and (min-width:990px){
+  .content-para{
+    margin-top: 50px;
+  }
+  .content-para h2 ,.content-para2 h4{
+    font-size: 30px;
+    text-align: start;
+  }
+  .content-para p ,.content-para2 p{
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}
+@media (max-width:991px) {
+.content-para{
+    width: 100%;
+  }
+.content-para2{
+  width: 100%;
+}
+ 
+}
 
 
 
 @media (max-width:770px) {
   .banner-section .banner-image img{
-    width: 100%;
-    position: absolute;
     top: 30%;
+    left: 70%;
    }
    .banner-section .my-para .my-content h1{
      font-size: 46px;
    }
-  .content-para p{
-   
-    font-size: 20px;
+  .content-para p ,.content-para2 p{
+   font-size: 20px;
+   text-align: center;
   }
-  .content-para h2{
+  .content-para ,.content-para2{
+    margin-top: 10px;
+  }
+
+  .content-para h2 ,.content-para2 h4{
     text-align: center;
-    width: 100%;
-    font-size: 40px;
+    font-size: 48px;
 
   }
   
@@ -389,14 +493,31 @@ input[type=NAME],[type=email]{
     text-align: center;
   }
  
-  .content-para p{
+  .content-para p , .content-para2 p{
     font-size: 13px;
-    width: 100%;
+    text-align: center;
   }
-  .content-para h2{
+  .content-para h2 , .content-para2 h4{
     text-align: center;
     font-size: 25px;
     margin-top: 10px;
+  }
+  .Services .svg-image{
+    display: flex;
+    justify-content: center;
+  }
+  .image{
+    display: none;
+  }
+  .Services .head h3{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
